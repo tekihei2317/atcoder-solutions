@@ -6,6 +6,6 @@ rm -rf $PWD/test
 oj d $1
 
 # ファイルを作成する
-# array=( `echo $1 | tr -s '/' ' '`)
-# last_index=`expr ${#array[@]} - 1`
-# cp $HOME/my-projects/compro/template.php "${array[${last_index}]}.php"
+array=( `echo $1 | tr -s '/' ' '`)
+last_index=`expr ${#array[@]} - 1`
+cp $HOME/my-projects/compro/template.php "${array[${last_index}]}.php"
