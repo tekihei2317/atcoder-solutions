@@ -5,3 +5,4 @@ AtCoderの解法です。主にPHP。
 |-|-|:-:|-|
 |[Doubled](https://atcoder.jp/contests/abc196/tasks/abc196_c)|244|[■](https://atcoder.jp/contests/abc196/submissions/21337529)|全探索|
 |[ORXOR](https://atcoder.jp/contests/abc197/tasks/abc197_c)|809|[■](https://atcoder.jp/contests/abc197/submissions/21407420)|全探索、XOR|
+|[Repset](https://atcoder.jp/contests/abc174/tasks/abc174_c)||[■](https://atcoder.jp/contests/abc174/submissions/21738628)|余り、鳩の巣原理|
