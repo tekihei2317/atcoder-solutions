@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-$integers = fn () => array_map('intval', explode(' ', fgets(STDIN)));
-$printn = fn ($value) => print($value . "\n");
-
 class Combination
 {
   private $comb;
@@ -26,20 +23,3 @@ class Combination
     return $this->comb[$n][$k];
   }
 }
-
-[$A, $B, $K] = $integers();
-$comb = new Combination(60);
-
-$answer = '';
-for ($i = $A + $B - 1; $i >= 0; $i--) {
-  $countStartWithA = $comb->get($i, $A - 1);
-  if ($K <= $countStartWithA) {
-    $answer .= 'a';
-    $A--;
-  } else {
-    $answer .= 'b';
-    $K -= $countStartWithA;
-    $B--;
-  }
-}
-$printn($answer);
