@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/incude/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"
+            ],
+            // "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/local/bin/g++",
+            "cStandard": "c11",
+            // "cppStandard": "c++98",
+            "cppStandard": "c++14",
+            // "intelliSenseMode": "macos-clang-x64"
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
