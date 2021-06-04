@@ -2,7 +2,9 @@
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (n); i++)
 
-vector<int> calc_left(vector<int> a) {
+using lint = long long;
+
+vector<int> calc_left(vector<lint> a) {
   int N = a.size();
   // left[i] := j < i かつ a_j < a[i]となる最大のj(存在しない場合は-1)
   vector<int> left(N);
@@ -20,7 +22,9 @@ vector<int> calc_left(vector<int> a) {
   return left;
 }
 
-int largest_rectangle(vector<int> a) {
+template <typename T>
+T largest_rectangle(vector<T> a) {
+  // オーバーフローに注意
   int N = a.size();
 
   vector<int> left, right;
@@ -31,8 +35,7 @@ int largest_rectangle(vector<int> a) {
   reverse(right.begin(), right.end());
   rep(i, N) right[i] = N - 1 - right[i];
 
-  // オーバーフローに注意
-  int ans = 0;
+  T ans = 0;
   rep(i, N) ans = max(ans, a[i] * (right[i] - left[i] - 1));
   return ans;
 }
@@ -40,7 +43,7 @@ int largest_rectangle(vector<int> a) {
 int main() {
   int N;
   cin >> N;
-  vector<int> a(N);
+  vector<lint> a(N);
   rep(i, N) cin >> a[i];
 
   cout << largest_rectangle(a) << endl;
