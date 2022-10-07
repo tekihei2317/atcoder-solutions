@@ -15,6 +15,9 @@
           (rember* a (car l))
           (rember* a (cdr l)))))))
 
+; 1+2+3+4
+(+ 1 (+ 2 (+ 3 4)
+
 (define l (list (list 'coffee) 'cup (list (list 'tea) 'cup) (list 'and (list 'hick)) 'cup))
 (print l)
 (print (rember* 'cup l))
