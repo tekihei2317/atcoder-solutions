@@ -1,0 +1,37 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proconio = "0.4.3"
+
+[[bin]]
+name = "rust"
+path = "main.rs"
+
+[[bin]]
+name = "main2"
+path = "main2.rs"
+
+[[bin]]
+name = "main3"
+path = "main3.rs"
+
+[[bin]]
+name = "main4"
+path = "main4.rs"
+
+[[bin]]
+name = "main5"
+path = "main5.rs"
+
+[[bin]]
+name = "main6"
+path = "main6.rs"
+
+[[bin]]
+name = "main7"
+path = "main7.rs"
